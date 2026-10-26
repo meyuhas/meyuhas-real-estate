@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d10ca055-1dbe-40f4-900f-ae2a3cc82e89
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מיוחס — סרטי נדל״ן</title>
+<meta name="description" content="36 שנים של ניסיון בבימוי והפקת סרטים · 36 חודשי סקרנות בבינה מלאכותית. מיוחס קריאייטיב פרודקשן.">
+<meta property="og:title" content="מיוחס — סרטי נדל״ן">
+<meta property="og:description" content="36 שנים של ניסיון בבימוי והפקת סרטים · 36 חודשי סקרנות בבינה מלאכותית.">
+<meta property="og:image" content="https://i.ytimg.com/vi/1pt-c0FhLN8/maxresdefault.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meyuhas-real-estate.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#FAF8F3;color:#111;font-family:'Assistant',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:#111;text-decoration:none}
+  a:hover{color:#8A7500}
+  @keyframes mspark{0%,100%{opacity:.35;transform:scale(.9)}50%{opacity:1;transform:scale(1.05)}}
+
+  .hdr{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 40px;background:rgba(250,248,243,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(17,17,17,.07)}
+  .logo{display:block;line-height:0}
+  .logo img{height:58px;width:auto;display:block}
+  .logo-sm img{height:44px}
+  @media(max-width:640px){.logo img{height:44px}}
+  .hdr nav{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:500}
+  .navlink{color:rgba(17,17,17,.62)}
+  .navlink:hover{color:#111}
+  .btn-dark{display:flex;align-items:center;gap:8px;background:#111;color:#FAF8F3;padding:9px 20px;border-radius:999px;font-weight:600;transition:background .3s,color .3s}
+  .btn-dark:hover{background:#FFE000;color:#111}
+
+  .hero{position:relative;padding:118px 40px 84px;max-width:1320px;margin:0 auto}
+  #art{position:absolute;top:40px;left:-120px;width:520px;height:520px;background:radial-gradient(circle at 50% 50%,rgba(255,224,0,.55),rgba(255,224,0,0) 68%);filter:blur(8px);pointer-events:none;z-index:0}
+  .hero-in{position:relative;z-index:1;max-width:960px}
+  .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:26px;font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:rgba(17,17,17,.5)}
+  .dot{display:inline-block;width:7px;height:7px;background:#FFE000;border-radius:50%;animation:mspark 2.6s ease-in-out infinite}
+  h1{margin:0;font-size:clamp(38px,6.4vw,88px);line-height:1.02;font-weight:700;letter-spacing:-.028em;text-wrap:balance}
+  .hl{position:relative;display:inline-block}
+  .hl::before{content:"";position:absolute;inset:auto 0 .1em 0;height:.34em;background:#FFE000;z-index:-1}
+  .lede{margin:34px 0 0;max-width:640px;font-size:clamp(17px,1.6vw,21px);line-height:1.6;font-weight:300;color:rgba(17,17,17,.62)}
+  .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+  .cta a{display:flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font-size:16px;font-weight:600;transition:background .3s,color .3s,border-color .3s}
+  .cta .p{background:#111;color:#FAF8F3}
+  .cta .p:hover{background:#FFE000;color:#111}
+  .cta .s{border:1px solid rgba(17,17,17,.2);color:#111}
+  .cta .s:hover{border-color:#111;background:rgba(17,17,17,.04)}
+
+  section#works{max-width:1320px;margin:0 auto;padding:40px 40px;scroll-margin-top:100px}
+  .works-hd{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:22px;border-bottom:1px solid rgba(17,17,17,.12)}
+  .works-hd h2{margin:0;font-size:clamp(26px,3vw,40px);font-weight:700;letter-spacing:-.025em}
+  .works-hd p{margin:0;font-size:15px;font-weight:300;color:rgba(17,17,17,.55)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding:40px 0 0}
+  @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}.hdr,.hero,section#works,section#contact{padding-left:24px;padding-right:24px}}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  article{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(17,17,17,.09);border-radius:16px;overflow:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .3s}
+  article:hover{transform:translateY(-6px);box-shadow:0 22px 44px -26px rgba(17,17,17,.32);border-color:rgba(17,17,17,.16)}
+  .player{position:relative;aspect-ratio:16/9;background:#111;cursor:pointer;overflow:hidden}
+  .player img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+  article:hover .player img{transform:scale(1.04)}
+  .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .veil{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:space-between;padding:18px;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,.05) 55%)}
+  .slug{font:500 11px ui-monospace,Menlo,monospace;letter-spacing:.14em;color:rgba(255,255,255,.72)}
+  .play{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#FFE000;color:#111;font-size:15px;transition:transform .4s cubic-bezier(.2,.8,.2,1);flex:none}
+  article:hover .play{transform:scale(1.08)}
+  .meta{display:flex;flex-direction:column;gap:7px;padding:22px 22px 24px}
+  .meta h3{margin:0;font-size:19px;font-weight:700;letter-spacing:-.015em}
+  .meta p{margin:0;font-size:14px;font-weight:300;color:rgba(17,17,17,.55)}
+
+  section#contact{margin:100px auto 0;max-width:1320px;padding:0 40px 40px;scroll-margin-top:100px}
+  .panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));border:1px solid rgba(17,17,17,.12);border-radius:22px;overflow:hidden;background:#fff}
+  .left{display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding:56px 48px;background:#FFE000}
+  .left h2{margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.08;text-wrap:balance}
+  .left>div>p{margin:20px 0 0;max-width:340px;font-size:16px;line-height:1.6;color:rgba(17,17,17,.72)}
+  .reel-w{margin:26px 0 0;max-width:420px}
+  .reel-l{font-size:13px;font-weight:600;color:rgba(17,17,17,.6);margin-bottom:9px}
+  .reel{position:relative;aspect-ratio:16/9;background:#111;border-radius:12px;overflow:hidden;cursor:pointer}
+  .reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+  .reel:hover img{transform:scale(1.04)}
+  .reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .reel .veil{justify-content:center;align-items:center;background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.08))}
+  .reel .play{width:46px;height:46px;font-size:14px}
+  .who{display:flex;flex-direction:column;gap:10px;font-size:17px;font-weight:600}
+  .who span{font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.14em;color:rgba(17,17,17,.55)}
+  form{display:flex;flex-direction:column;gap:18px;padding:56px 48px}
+  form label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:rgba(17,17,17,.6)}
+  form input{border:0;border-bottom:1px solid rgba(17,17,17,.2);background:transparent;padding:11px 2px;font:400 17px 'Assistant',sans-serif;color:#111;outline:none}
+  form input:focus{border-bottom-color:#111}
+  form textarea{border:1px solid rgba(17,17,17,.16);border-radius:12px;background:transparent;padding:14px;font:400 16px/1.5 'Assistant',sans-serif;color:#111;outline:none;resize:vertical}
+  form textarea:focus{border-color:#111}
+  form button{margin-top:6px;border:0;cursor:pointer;background:#111;color:#FAF8F3;padding:16px 28px;border-radius:999px;font:600 16px 'Assistant',sans-serif;transition:background .3s,color .3s}
+  form button:hover{background:#FFE000;color:#111}
+  #status{margin:0;min-height:20px;font-size:13px;font-weight:500;color:rgba(17,17,17,.5)}
+
+  footer{max-width:1320px;margin:60px auto 0;padding:56px 40px 64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid rgba(17,17,17,.1)}
+  footer span{font-size:14px;color:rgba(17,17,17,.5)}
+
+  .lb{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:56px 40px;background:rgba(10,10,10,.965)}
+  .lb.on{display:flex}
+  body.playing .hdr{display:none}
+  .lb-in{position:relative;width:min(1180px,100%);aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;box-shadow:0 34px 90px -24px rgba(0,0,0,.75)}
+  .lb-in iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .lb-x{position:absolute;top:18px;left:20px;width:42px;height:42px;border:0;border-radius:50%;background:#FFE000;color:#111;font:700 18px 'Assistant',sans-serif;cursor:pointer;line-height:1}
+  .lb-x:hover{transform:scale(1.06)}
+  @media(max-width:640px){.lb{padding:64px 14px}}
+
+  @media(max-width:640px){
+    section#contact{margin-top:64px;padding-left:16px;padding-right:16px}
+    .panel{border-radius:18px}
+    .left{padding:36px 22px;gap:26px}
+    form{padding:36px 22px;gap:16px}
+    .reel-w{max-width:100%}
+    .hero{padding-top:76px;padding-bottom:56px}
+    #art{width:320px;height:320px;left:-90px}
+    .cta a{padding:13px 22px;font-size:15px}
+    .hdr{padding:14px 16px;gap:10px}
+    .hdr nav{gap:14px;font-size:13px}
+    .btn-dark{padding:8px 14px}
+    .meta{padding:18px 18px 20px}
+  }
+  @media(max-width:400px){
+    .navlink{display:none}
+  }
+.player{display:block;width:100%;padding:0;border:0;text-align:initial;font:inherit}.drive{background:linear-gradient(135deg,#242420,#111);color:#FFE000}.drive-title{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;font:600 clamp(18px,2vw,28px) monospace;letter-spacing:.08em}.drive-title small{font:400 15px Assistant, sans-serif;color:#eee;margin-top:12px}.meta a{font-size:13px;text-decoration:underline;text-underline-offset:4px}.contact-copy{padding:56px 48px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:24px}.contact-copy h3{font-size:32px;line-height:1.15;margin:0}.contact-copy p{font-size:18px;line-height:1.7;margin:0}button:focus-visible,a:focus-visible{outline:3px solid #8a7500;outline-offset:5px}.lb-x{z-index:2}@media(max-width:640px){.contact-copy{padding:36px 22px}.hdr{padding:16px}.hdr nav{gap:16px;font-size:14px}.btn-dark{padding:9px 15px}.eyebrow{font-size:10px}.hero{padding-top:64px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.portfolio-groups{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:26px;padding-top:34px;align-items:start}.film-group{min-width:0}.group-heading{font-size:20px;line-height:1.4;min-height:62px;margin:0;padding:0 0 16px;border-bottom:1px solid #dcd9d1}.ai-group .group-heading{border-bottom:0;position:relative}.ai-group .group-heading::after{content:"";position:absolute;bottom:0;right:0;left:26px;height:3px;background:#ffe000}.film-group .grid{grid-template-columns:1fr;padding-top:24px}.ai-group .grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:980px){.film-group .grid,.ai-group .grid{grid-template-columns:1fr}}@media(max-width:640px){.portfolio-groups{grid-template-columns:1fr;gap:40px}.film-group .grid,.ai-group .grid{grid-template-columns:1fr}.group-heading{font-size:20px;min-height:0}.ai-group .group-heading::after{left:26px}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a href="#" class="logo"><img src="logo.png" alt="MEYUHAS - AI Forward production"></a>
+  <nav>
+    <a class="navlink" href="#works">העבודות</a>
+    <a class="btn-dark" href="#contact">דברו איתנו</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div id="art"></div>
+  <div class="hero-in">
+    <div class="eyebrow"><span class="dot"></span><span>REAL ESTATE FILMS · MEYUHAS</span></div>
+    <h1>סרטים שנותנים לנדל״ן<br><span class="hl">סיפור. אופי. חיים.</span></h1>
+    <p class="lede">מצילום והדמיות ועד בינה מלאכותית — סרטי נדל״ן מבית מיוחס קריאייטיב פרודקשן.</p>
+    <div class="cta">
+      <a class="p" href="#works">צפו בעבודות</a>
+      <a class="s" href="#contact">בואו נעשה סרט</a>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="works-hd">
+    <h2>נדל״ן בפריים</h2>
+    <p>בחרו פרויקט וצפו בסרט</p>
+  </div>
+  <div class="portfolio-groups">
+    <section class="film-group ai-group" aria-labelledby="ai-heading"><h3 id="ai-heading" class="group-heading">בוצעו בבינה מלאכותית באמצעות בינה אנושית</h3><div class="grid" id="ai-grid"></div></section>
+    <section class="film-group" aria-labelledby="more-heading"><h3 id="more-heading" class="group-heading">סרטי נדל״ן נוספים</h3><div class="grid" id="other-grid"></div></section>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="panel">
+    <div class="left">
+      <div>
+        <h2>יש לכם פרויקט בראש?<br>בואו נדבר עליו.</h2>
+        <p>שיחת אפיון קצרה ואחריה תסריט, סטוריבורד ולוח זמנים.</p>
+        <div class="reel-w">
+          <div class="reel-l">שואוריל מיוחס בימים שלפני הבינה</div>
+          <button class="reel player" id="reel" data-id="XXv2o822fzI" data-type="youtube" aria-label="צפייה בשואוריל מיוחס">
+            <img src="https://i.ytimg.com/vi/XXv2o822fzI/maxresdefault.jpg" alt="שואוריל מיוחס"
+                 onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/XXv2o822fzI/hqdefault.jpg'">
+            <div class="veil"><span class="play">▶</span></div>
+          </button>
+        </div>
+      </div>
+      <div class="who">
+        <span>אורן מיוחס</span>
+        <a href="tel:0548131717" dir="ltr" style="text-align:right">054-8131717</a>
+        <a href="mailto:oren@meyuhas.tv" dir="ltr" style="text-align:right">oren@meyuhas.tv</a>
+      </div>
+    </div>
+
+    <div class="contact-copy"><span class="eyebrow">LET’S MAKE A FILM</span><h3>מהתוכניות על הנייר<br>ועד הגדלת המכירות והתדמית</h3><p>ספרו לנו על הפרויקט, הקהל ולוח הזמנים.<br>משם נתחיל לבנות את הסרט שלכם.</p><a class="btn-dark" href="mailto:oren@meyuhas.tv?subject=סרט%20לפרויקט%20נדל״ן">כתבו לאורן ↗</a><a href="https://wa.me/972548131717" target="_blank" rel="noopener">או נדבר ב־WhatsApp ↗</a></div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="logo logo-sm"><img src="logo.png" alt="MEYUHAS"></a>
+  <span>אורן מיוחס · במאי ובעלים · <a href="https://meyuhas.tv" style="font-weight:600">meyuhas.tv</a></span>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="צפייה בסרט"><button class="lb-x" id="lbx" aria-label="סגירה">✕</button><div class="lb-in" id="lbslot"></div></div>
+<script>
+const FILMS = [{"id": "1pt-c0FhLN8", "slug": "ORON", "title": "אורון", "meta": "הפקת AI", "type": "youtube"}, {"id": "oS-iv-beBB0", "slug": "GINDI × SHVIRO", "title": "חן ואיתי גינדי וקבוצת שבירו", "meta": "סרט נדל״ן", "type": "youtube"}, {"id": "1rZCtGNzrvg", "slug": "ARIEL · AI", "title": "נכסי אריאל", "meta": "הדמיות AI", "type": "youtube"}, {"id": "FKUA6LQj5Bk", "slug": "YEHUD MONOSSON", "title": "יהוד־מונוסון", "meta": "הדמיות, צילום ואנימציית כותרות", "type": "youtube"}, {"id": "ixee5_cL_DM", "slug": "BOTANIC", "title": "קרסו בוטניק", "meta": "סרט לפרויקט בוטניק", "type": "youtube"}, {"id": "1XGEqwWhB6fIsH_xCfTYOrwn31N6BHZDm", "slug": "ARIEL MASTER", "title": "נכסי אריאל — סרט מאסטר", "meta": "קובץ מקור · Google Drive", "type": "drive"}, {"id": "1Kr__nOclagVwcf3ZkFCS78gKj7kqRy1b", "slug": "MEONOT", "title": "מעונות", "meta": "קובץ מקור · Google Drive", "type": "drive"}, {"id": "1x4l23kLouIws7CUB18g_SkmfykstZLOm", "slug": "N ARIEL EDIT2", "title": "נכסי אריאל — עריכה 2", "meta": "קובץ מקור · Google Drive", "type": "drive"}, {"id": "1sxgtmzTVz-PzVOB_SgrGy9Kpy1Qhb9CZ", "slug": "REIT1", "title": "ריט 1", "meta": "קובץ מקור · Google Drive", "type": "drive"}];
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const POSTERS = {'1XGEqwWhB6fIsH_xCfTYOrwn31N6BHZDm':'ariel','1Kr__nOclagVwcf3ZkFCS78gKj7kqRy1b':'meonot','1x4l23kLouIws7CUB18g_SkmfykstZLOm':'ariel2','1sxgtmzTVz-PzVOB_SgrGy9Kpy1Qhb9CZ':'reit'};
+const renderFilm = f => `
+  <article><button class="player ${f.type==='drive'?'drive':''}" data-id="${f.id}" data-type="${f.type}" aria-label="צפייה: ${esc(f.title)}">
+    ${f.type==='youtube'?`<img src="https://i.ytimg.com/vi/${f.id}/hqdefault.jpg" alt="${esc(f.title)}" loading="lazy">`:`<img src="${POSTERS[f.id]}.jpg" alt="${esc(f.title)}" loading="lazy">`}
+    <span class="veil"><span class="slug">${esc(f.slug)}</span><span class="play">▶</span></span></button>
+    <div class="meta"><h3>${esc(f.title)}</h3><p>${esc(f.meta)}</p></div></article>`;
+const isAI = f => f.type === 'drive' || ['1pt-c0FhLN8','1rZCtGNzrvg'].includes(f.id);
+document.getElementById('ai-grid').innerHTML = FILMS.filter(isAI).map(renderFilm).join('');
+document.getElementById('other-grid').innerHTML = FILMS.filter(f => !isAI(f)).map(renderFilm).join('');
+const lb = document.getElementById('lb');
+const lbslot = document.getElementById('lbslot');
+let previousFocus;
+function mount(box){
+ previousFocus=box;
+ const id=box.dataset.id;
+ const src=box.dataset.type==='drive'?'https://drive.google.com/file/d/'+id+'/preview':'https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1';
+ lbslot.innerHTML='<iframe src="'+src+'" title="'+esc(box.getAttribute('aria-label')||'נגן סרט')+'" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+ lb.classList.add('on');document.body.style.overflow='hidden';document.body.classList.add('playing');document.getElementById('lbx').focus();
+}
+function closeLb(){
+  lb.classList.remove('on');
+  lbslot.innerHTML = '';
+  previousFocus?.focus();
+  document.body.style.overflow = '';
+  document.body.classList.remove('playing');
+}
+lb.addEventListener('click', e => { if (e.target === lb || e.target.id === 'lbx') closeLb(); });
+addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+document.addEventListener('click', e => {
+  const box = e.target.closest('.player, .reel');
+  if (box) mount(box);
+});
+
+// parallax on hero glow
+const art = document.getElementById('art');
+addEventListener('scroll', () => {
+  if (document.body.classList.contains('playing')) return;
+  const y = scrollY || 0;
+  art.style.transform = 'translate3d(0,' + (y * .22) + 'px,0) scale(' + (1 + Math.min(y,600)/3000) + ')';
+}, {passive:true});
+
+</script>
+</body>
+</html>
